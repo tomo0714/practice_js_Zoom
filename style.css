@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/************************************************************
+reset *******************************************************/
+
+body * {
+  box-sizing: border-box;
+}
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+dt,
+div {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/************************************************************
+base *******************************************************/
+
+body {
+  line-height: 1.7;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/************************************************************
+style *******************************************************/
+
+body {
+  background-color: gray;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#wrap {
+  display: flex;
+  justify-content: center;
+}
+
+#thumb {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+/* mouse */
+#thumb span {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: none;
+  border: 1px solid red;
+}
+
+#zoom {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+#zoom img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
